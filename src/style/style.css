@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    color: hsl(0, 0%, 100%)
+}
+body {
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    background: hsl(257, 40%, 49%) url('/images/bg-desktop.svg') no-repeat no-repeat center;
+    background-size: cover;
+}
+header {
+    padding: 20px 60px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main .left {
+    margin-left: 60px;
+}
+main .right {
+    width: 40%;
+    padding: 40px 71px 0px 40px;
+}
+main .right h1 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+main .right p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px; 
+}
+main .btn-register {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 9px 30px hsl(0, 0%, 0%);
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: hsl(257, 40%, 49%);
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+main .btn-register:hover {
+    color: #ffffff;
+    background-color: hsl(300, 69%, 71%);
+}
+footer {
+    position: absolute;
+    right: 6%;
+    bottom: 40px;
+}
+footer ul{
+    display: flex;
+    gap: 15px;
+}
+footer ul li a{
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+footer ul li a:hover {
+    border: 1.5px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
