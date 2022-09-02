@@ -8,34 +8,60 @@ body {
     margin: 0 auto;
     background: hsl(257, 40%, 49%) url('/images/bg-desktop.svg') no-repeat no-repeat center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header {
-    padding: 20px 60px;
+    width: 100%;
+    height: 15vh;
+}
+header .container-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+header .logo {
+    margin-left: 90px;
 }
 main {
+    width: 100%;
+    height: 85vh;
+    padding: 0 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 main .left {
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-main .right {
-    width: 40%;
-    padding: 40px 71px 0px 40px;
+.left .illustration {
+    width: 90%;
 }
-main .right h1 {
+.right {
+    max-width: 545px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right h1 {
     font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 40px;
 }
-main .right p {
+.right p {
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 30px; 
 }
-main .btn-register {
+.right .btn-register {
     padding: 15px 50px;
     border: none;
     border-radius: 50px;
@@ -50,7 +76,7 @@ main .btn-register {
     background-color: #ffffff;
     transition: 0.3s ease-in-out;
 }
-main .btn-register:hover {
+.right .btn-register:hover {
     color: #ffffff;
     background-color: hsl(300, 69%, 71%);
 }
