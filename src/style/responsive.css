@@ -1,68 +1,84 @@
-@media (max-width: 1140px) {
+@media (max-width: 1215px) {
+    .illustration {
+        width: 50%;
+    }
+}
+@media (max-width:1060px) {
     header .logo {
-        margin-left: 60px;
+        width: 26%
     }
     main {
-        padding: 0 30px;
+        align-items: center;
     }
-    .right {
-        max-width: 450px;
+    .illustration {
+        width: 45%;
     }
-    .right h1 {
-        font-size: 3.2rem;
-        margin-bottom: 20px;
+    .information h1 {
+        font-size: 3rem;
     }
-    .right p {
-        font-size: 1.27rem;
+    .information p {
+        font-size: 1.5rem
     }
 }
 @media (max-width: 950px) {
-    header .logo {
-        margin-left: 0px;
+    .information h1 {
+        font-size: 2.5rem;
     }
-    main {
-        padding: 0 0px;
-    }
-    .left {
-        width: 420px;
-    }
-    .right {
-        max-width: 330px;
-    }
-    .right h1 {
-        font-size: 2.1rem;
-        text-align: center;
-    }
-    .right p {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .right .btn-register {
-        display: block;
-        margin: auto;
-        padding: 10px 60px;
-
+    .information p {
+        max-width: 375px;
+        min-width: 375px;
         font-size: 1.3rem;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
     body {
-        background: hsl(257, 40%, 49%)  url('/images/bg-mobile.svg') no-repeat no-repeat top;
-        background-size: 100% 400px; 
+        grid-template-areas: "header""main""footer";
+    }
+    header {
+        align-self: center;
     }
     header .logo {
-        width: 150px;
-        margin-left: 15%;
+        width: 50%; /* !!!!!!!!!! */
     }
     main {
-        height: 75vh;
         flex-direction: column;
         justify-content: center;
     }
-    .left .illustration {
-        width: 70%;
+    .illustration {
+        width: 250px;
+    }
+    .information {
+        align-items: center;
+    }
+    .information h1 {
+        margin-bottom: 5px;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .information p {
+        max-width: 245px;
+        min-width: 245px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .information .btn-register {
+        padding: 7px 60px;
+        font-size: 1.2rem;
     }
     footer {
-        right: auto;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .social a {
+        width: 25px;
+        height: 25px;
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        background: hsl(257, 40%, 49%) url('../../images/bg-mobile.svg') no-repeat no-repeat top;
+        background-size: 100% 50%;
     }
 }
